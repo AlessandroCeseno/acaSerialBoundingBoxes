@@ -8,10 +8,10 @@ int main()
 
     int i;
     BoundingBoxes boundingBoxes;
-    printf("Start to work with SERIAL algorithm.");
+    printf("Start to work with SERIAL algorithm. \n");
     for (i=1; i<= NUMBERPAGES; i++)
     {
-        printf("\n elaborate page %d",i);
+        printf("elaborate page %d \n",i);
         boundingBoxes.workOnThisPage(i);
     }
 

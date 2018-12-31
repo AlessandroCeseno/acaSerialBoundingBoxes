@@ -41,14 +41,13 @@ public:
             rectangle( drawing, boundRect[i].tl(), boundRect[i].br(), color, 2 );
         }
         //imshow( "Contours", drawing );
-        printf("--outputacaBoundingBoxes-- ");
+        printf("Start to write image elaborated: %s  \n", pagenumber.c_str());
         imwrite("../../outputacaBoundingBoxes/" + pagenumber + ".jpg", drawing );
     }
 
 
     void workOnThisPage(int indexpage)
     {
-        printf("I want to work on just one image at time  %d  but to use Parallel Programming \n ",indexpage);
         std::string indexpageasstring = std::to_string(indexpage);
         try
         {
