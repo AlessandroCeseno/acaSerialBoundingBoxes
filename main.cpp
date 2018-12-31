@@ -1,4 +1,3 @@
-#include <iostream>
 #define NUMBERPAGES       15
 #include "BoundingBoxes.cpp"
 
