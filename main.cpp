@@ -1,5 +1,6 @@
-
-#define NUMBERPAGES       15
+#include <stdio.h>
+#include <sys/types.h>
+#include <dirent.h>
 #include "BoundingBoxes.cpp"
 
 int main()
@@ -11,11 +12,21 @@ int main()
     printf("Start to work with SERIAL algorithm. \n");
     clock_t start, stop;
     start = clock();
-    for (i=1; i<= NUMBERPAGES; i++)
+
+    DIR *dir;
+    struct dirent *ent;
+    if ((dir = opendir ("../../dataFlyers/")) != NULL)
     {
-        printf("elaborate page %d \n",i);
-        boundingBoxes.workOnThisPage(i);
+        while ((ent = readdir(dir)) != NULL)
+        {
+            if( strcmp(ent->d_name, ".") != 0 && strcmp(ent->d_name, "..") != 0 )
+            {
+                boundingBoxes.workOnThisPage(ent->d_name);
+            }
+        }
+        closedir(dir);
     }
+
     stop = clock();
     double elapsed_seconds = ((double) stop - start )/CLOCKS_PER_SEC; // in seconds
     printf("Time elapsed in seconds: %f \n", elapsed_seconds);

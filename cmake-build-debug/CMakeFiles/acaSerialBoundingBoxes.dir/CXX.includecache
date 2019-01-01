@@ -19,6 +19,12 @@ opencv2/imgproc.hpp
 /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/opencv2/imgproc.hpp
 
 /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp
+stdio.h
+-
+sys/types.h
+-
+dirent.h
+-
 BoundingBoxes.cpp
 /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp
 

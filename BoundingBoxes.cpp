@@ -17,11 +17,12 @@ class BoundingBoxes
 
 public:
     Mat src_gray;
-    int thresh = 225;
-    RNG rng = RNG(12345);
 
     void thresh_meth(string pagenumber)
     {
+        int thresh = 225;
+        RNG rng = RNG(12345);
+
         Mat canny_output;
         Canny( src_gray, canny_output, thresh, thresh*2 );
         vector<vector<Point> > contours;
@@ -41,24 +42,22 @@ public:
             rectangle( drawing, boundRect[i].tl(), boundRect[i].br(), color, 2 );
         }
         printf("Start to write image elaborated: %s  \n", pagenumber.c_str());
-        imwrite("../../outputacaBoundingBoxes/" + pagenumber + ".jpg", drawing );
+        imwrite("../../outputacaBoundingBoxes/" + pagenumber , drawing );
     }
 
 
-    void workOnThisPage(int indexpage)
+    void workOnThisPage(string namepage)
     {
-        std::string indexpageasstring = std::to_string(indexpage);
         try
         {
-            Mat src = imread( "../../dataFlyers/" + indexpageasstring + ".png" );
+            Mat src = imread( "../../dataFlyers/" + namepage );
             if( src.empty() )
             {
                 printf("Could not open or find the image!\n");
             }
             cvtColor( src, src_gray, COLOR_BGR2GRAY );
             blur( src_gray, src_gray, Size(3,3) );
-            thresh_meth(indexpageasstring);
-
+            thresh_meth(namepage);
         }
         catch( cv::Exception& e )
         {
