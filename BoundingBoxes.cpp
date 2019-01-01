@@ -40,7 +40,6 @@ public:
             drawContours( drawing, contours_poly, (int)i, color );
             rectangle( drawing, boundRect[i].tl(), boundRect[i].br(), color, 2 );
         }
-        //imshow( "Contours", drawing );
         printf("Start to write image elaborated: %s  \n", pagenumber.c_str());
         imwrite("../../outputacaBoundingBoxes/" + pagenumber + ".jpg", drawing );
     }
