@@ -17,6 +17,11 @@ class BoundingBoxes
 
 public:
     Mat src_gray;
+    string directpath;
+    BoundingBoxes(std::string directorypath)
+    {
+        directpath = directorypath;
+    }
 
     void thresh_meth(string pagenumber)
     {
@@ -50,7 +55,7 @@ public:
     {
         try
         {
-            Mat src = imread( "../../dataFlyers/" + namepage );
+            Mat src = imread( directpath + namepage );
             if( src.empty() )
             {
                 printf("Could not open or find the image!\n");

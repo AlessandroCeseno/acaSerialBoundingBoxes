@@ -8,14 +8,18 @@ int main()
     std::cout << "Hello Advanced Computer Architecture. The SERIAL algorithm. Here my smart and simple project that works on Computer Vision!" << std::endl;
 
     int i;
-    BoundingBoxes boundingBoxes;
     printf("Start to work with SERIAL algorithm. \n");
     clock_t start, stop;
     start = clock();
 
+    std::string directorypath = "../../dataFlyers/" ;
+    const char * c = directorypath.c_str();
+
+    BoundingBoxes boundingBoxes = BoundingBoxes(directorypath);
+
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("../../dataFlyers/")) != NULL)
+    if ((dir = opendir (c)) != NULL)
     {
         while ((ent = readdir(dir)) != NULL)
         {
