@@ -34,7 +34,7 @@ int main()
         closedir(dir);
     }
 
-    double endTime = omp_get_wtime();		// registers the second time
+    double endTime = omp_get_wtime();
     double totalTime = endTime-startTime;
     printf("Serial implementation, Seconds: %f ", totalTime);
 
