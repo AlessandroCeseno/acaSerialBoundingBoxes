@@ -11,9 +11,9 @@ int main()
     printf("Start to work with SERIAL algorithm. \n");
     double start_time = omp_get_wtime();
 
-    std::string directorypath = "../../dataFlyers150/" ;
-    const char * c = directorypath.c_str();
-    BoundingBoxes boundingBoxes = BoundingBoxes(directorypath);
+    std::string directory_path = "../../dataFlyers150/" ;
+    const char * c = directory_path.c_str();
+    BoundingBoxes bounding_boxes = BoundingBoxes(directory_path);
     DIR *dir;
     struct dirent *ent;
     if ((dir = opendir (c)) != NULL)
@@ -22,7 +22,7 @@ int main()
         {
             if( strcmp(ent->d_name, ".") != 0 && strcmp(ent->d_name, "..") != 0 )
             {
-                boundingBoxes.workOnThisPage(ent->d_name);
+                bounding_boxes.workOnThisPage(ent->d_name);
             }
         }
         closedir(dir);
