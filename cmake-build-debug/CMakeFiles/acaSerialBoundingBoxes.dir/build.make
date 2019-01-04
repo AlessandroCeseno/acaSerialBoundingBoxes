@@ -60,28 +60,28 @@ include CMakeFiles/acaSerialBoundingBoxes.dir/flags.make
 CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.o: CMakeFiles/acaSerialBoundingBoxes.dir/flags.make
 CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xpuser/CLionProjects/acaSerialBoundingBoxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.o -c /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.o -c /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp
 
 CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp > CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.i
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp > CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.i
 
 CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp -o CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.s
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/main.cpp -o CMakeFiles/acaSerialBoundingBoxes.dir/main.cpp.s
 
 CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.o: CMakeFiles/acaSerialBoundingBoxes.dir/flags.make
 CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.o: ../BoundingBoxes.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xpuser/CLionProjects/acaSerialBoundingBoxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.o -c /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.o -c /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp
 
 CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp > CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.i
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp > CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.i
 
 CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp -o CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.s
+	/usr/local/Cellar/llvm/7.0.0_1/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp -o CMakeFiles/acaSerialBoundingBoxes.dir/BoundingBoxes.cpp.s
 
 # Object files for target acaSerialBoundingBoxes
 acaSerialBoundingBoxes_OBJECTS = \

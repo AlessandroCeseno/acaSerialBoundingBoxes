@@ -2,17 +2,20 @@
 #include <sys/types.h>
 #include <dirent.h>
 #include "BoundingBoxes.cpp"
+#include <omp.h>
 
 int main()
 {
     std::cout << "Hello Advanced Computer Architecture. The SERIAL algorithm. Here my smart and simple project that works on Computer Vision!" << std::endl;
 
-    int i;
     printf("Start to work with SERIAL algorithm. \n");
-    clock_t start, stop;
-    start = clock();
+    //clock_t start, stop;
+    //start = clock();
 
-    std::string directorypath = "../../dataFlyers/" ;
+    double startTime = omp_get_wtime();
+
+
+    std::string directorypath = "../../dataFlyers1500/" ;
     const char * c = directorypath.c_str();
 
     BoundingBoxes boundingBoxes = BoundingBoxes(directorypath);
@@ -31,11 +34,14 @@ int main()
         closedir(dir);
     }
 
+
+    /*
     stop = clock();
     double elapsed_seconds = ((double) stop - start )/CLOCKS_PER_SEC; // in seconds
     printf("Time elapsed in seconds: %f \n", elapsed_seconds);
     double elapsed_milliseconds = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
     printf("Time elapsed in milliseconds: %f \n", elapsed_milliseconds);
+    */
 
     return 0;
 }

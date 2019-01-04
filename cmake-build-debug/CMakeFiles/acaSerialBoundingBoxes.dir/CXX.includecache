@@ -27,6 +27,8 @@ dirent.h
 -
 BoundingBoxes.cpp
 /Users/xpuser/CLionProjects/acaSerialBoundingBoxes/BoundingBoxes.cpp
+omp.h
+-
 
 /usr/local/include/boost/assert.hpp
 boost/config.hpp
@@ -760,6 +762,10 @@ boost/current_function.hpp
 
 /usr/local/include/boost/utility/addressof.hpp
 boost/core/addressof.hpp
+-
+
+/usr/local/include/omp.h
+stdlib.h
 -
 
 /usr/local/include/opencv/cxcore.h
