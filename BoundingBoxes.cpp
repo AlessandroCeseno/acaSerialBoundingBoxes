@@ -51,18 +51,18 @@ public:
     }
 
 
-    void workOnThisPage(string namepage)
+    void workOnThisPage(string pagename)
     {
         try
         {
-            Mat src = imread( directpath + namepage );
+            Mat src = imread( directpath + pagename );
             if( src.empty() )
             {
                 printf("Could not open or find the image!\n");
             }
             cvtColor( src, src_gray, COLOR_BGR2GRAY );
             blur( src_gray, src_gray, Size(3,3) );
-            thresh_meth(namepage);
+            thresh_meth(pagename);
         }
         catch( cv::Exception& e )
         {
