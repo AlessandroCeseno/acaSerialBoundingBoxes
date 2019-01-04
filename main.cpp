@@ -15,7 +15,7 @@ int main()
     double startTime = omp_get_wtime();
 
 
-    std::string directorypath = "../../dataFlyers1500/" ;
+    std::string directorypath = "../../dataFlyers150/" ;
     const char * c = directorypath.c_str();
 
     BoundingBoxes boundingBoxes = BoundingBoxes(directorypath);
