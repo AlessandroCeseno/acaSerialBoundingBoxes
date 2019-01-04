@@ -17,13 +17,13 @@ class BoundingBoxes
 
 public:
     Mat src_gray;
-    string directpath;
-    BoundingBoxes(std::string directorypath)
+    string direct_path;
+    BoundingBoxes(std::string directory_path)
     {
-        directpath = directorypath;
+        direct_path = directory_path;
     }
 
-    void thresh_meth(string pagenumber)
+    void threshMeth(string page_number)
     {
         int thresh = 225;
         RNG rng = RNG(12345);
@@ -46,23 +46,23 @@ public:
             drawContours( drawing, contours_poly, (int)i, color );
             rectangle( drawing, boundRect[i].tl(), boundRect[i].br(), color, 2 );
         }
-        printf("Start to write image elaborated: %s  \n", pagenumber.c_str());
-        imwrite("../../outputacaBoundingBoxes/" + pagenumber , drawing );
+        printf("Start to write image elaborated: %s  \n", page_number.c_str());
+        imwrite("../../outputacaBoundingBoxes/" + page_number , drawing );
     }
 
 
-    void workOnThisPage(string pagename)
+    void workOnThisPage(string page_name)
     {
         try
         {
-            Mat src = imread( directpath + pagename );
+            Mat src = imread( direct_path + page_name );
             if( src.empty() )
             {
                 printf("Could not open or find the image!\n");
             }
             cvtColor( src, src_gray, COLOR_BGR2GRAY );
             blur( src_gray, src_gray, Size(3,3) );
-            thresh_meth(pagename);
+            threshMeth(page_name);
         }
         catch( cv::Exception& e )
         {
